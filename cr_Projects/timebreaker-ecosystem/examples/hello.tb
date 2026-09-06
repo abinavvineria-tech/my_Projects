@@ -1,0 +1,9 @@
+use std
+
+aura name = "PureLily"
+aura version = 1
+
+spell greet(name):
+    return "Hello, " + name
+
+print(greet(name))

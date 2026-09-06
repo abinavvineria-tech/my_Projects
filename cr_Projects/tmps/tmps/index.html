@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🧩 TMPS - The Missing Piece Studio</title>
+<script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.0/min/vs/loader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xterm@5.3.0/lib/xterm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.8.0/lib/xterm-addon-fit.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@5.3.0/css/xterm.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d0b1e;--surface:#1a1730;--surface2:#252042;--border:#352f5e;--purple:#a78bfa;--violet:#8b5cf6;--pink:#f472b6;--lavender:#c4b5fd;--white:#f0eeff;--muted:#9d95c0;--success:#4ade80;--warning:#fbbf24;--error:#f87171;--font:'JetBrains Mono','Fira Code',monospace;--radius:12px}
+html,body{height:100%;background:var(--bg);color:var(--white);font-family:var(--font);font-size:13px;overflow:hidden}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+#app{display:flex;flex-direction:column;height:100vh}
+#header{height:48px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 16px;gap:12px;flex-shrink:0;z-index:100}
+#main{flex:1;display:flex;overflow:hidden}
+#sidebar{width:220px;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;flex-shrink:0}
+#sidebar-tabs{display:flex;background:var(--surface2);border-bottom:1px solid var(--border)}
+.stab{flex:1;padding:8px 4px;text-align:center;font-size:11px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s}
+.stab:hover,.stab.active{color:var(--purple);border-color:var(--purple)}
+#sidebar-body{flex:1;overflow-y:auto}
+#editor-area{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
+#editor-tabs{display:flex;background:var(--surface2);border-bottom:1px solid var(--border);min-height:36px;align-items:flex-end;overflow-x:auto}
+.etab{padding:8px 16px;font-size:12px;color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:6px;border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;flex-shrink:0}
+.etab:hover,.etab.active{color:var(--white);background:var(--surface)}
+.etab .dot{width:6px;height:6px;border-radius:50%;background:transparent}
+.etab.dirty .dot{background:var(--warning)}
+.etab .close{opacity:0;margin-left:4px;font-size:10px;cursor:pointer;transition:opacity .2s}
+.etab:hover .close{opacity:1}
+.etab:hover .close:hover{color:var(--error)}
+#monaco-container{flex:1;overflow:hidden}
+#bottom-bar{height:220px;background:var(--surface);border-top:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0}
+#bottom-tabs{display:flex;background:var(--surface2);border-bottom:1px solid var(--border);padding:4px 8px;gap:4px}
+.btab{padding:4px 12px;font-size:11px;color:var(--muted);cursor:pointer;border-radius:6px;transition:all .2s}
+.btab:hover,.btab.active{background:var(--surface);color:var(--purple)}
+#right-panel{width:300px;background:var(--surface);border-left:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden;flex-shrink:0}
+#panel-tabs{display:flex;background:var(--surface2);border-bottom:1px solid var(--border)}
+.ptab{flex:1;padding:8px 4px;text-align:center;font-size:11px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s}
+.ptab:hover,.ptab.active{color:var(--pink);border-color:var(--pink)}
+.logo{font-size:15px;display:flex;align-items:center;gap:8px}
+.logo-icon{font-size:20px;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.status-bar{display:flex;align-items:center;gap:12px;font-size:11px;color:var(--muted);margin-left:auto}
+.sitem{display:flex;align-items:center;gap:4px}
+.dot{width:8px;height:8px;border-radius:50%}
+.dot-ok{background:var(--success);box-shadow:0 0 6px var(--success)}
+.dot-err{background:var(--error);box-shadow:0 0 6px var(--error)}
+.dot-warn{background:var(--warning);box-shadow:0 0 6px var(--warning)}
+.dot-off{background:var(--muted)}
+
+.tree-item{padding:4px 8px;cursor:pointer;border-radius:6px;display:flex;align-items:center;gap:6px;transition:background .15s;user-select:none;font-size:12px;color:var(--white)}
+.tree-item:hover{background:var(--surface2)}
+.tree-item.selected{background:var(--violet);color:white}
+.tree-item.dir{font-weight:500}
+.tree-item .icon{font-size:14px;flex-shrink:0}
+.tree-item .name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tree-children{padding-left:12px}
+
+#chat-output{flex:1;overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:8px}
+.msg{padding:8px 12px;border-radius:var(--radius);font-size:12px;line-height:1.5;max-width:90%;word-break:break-word}
+.msg.user{background:var(--violet);color:white;align-self:flex-end;border-bottom-right-radius:4px}
+.msg.hermes{background:var(--surface2);color:var(--white);align-self:flex-start;border-bottom-left-radius:4px;white-space:pre-wrap}
+.msg.system{background:transparent;color:var(--muted);font-size:11px;text-align:center;font-style:italic}
+#chat-input-wrap{display:flex;padding:8px;gap:8px;border-top:1px solid var(--border)}
+#chat-input{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--white);padding:8px 12px;font-family:var(--font);font-size:12px;resize:none;outline:none;transition:border-color .2s}
+#chat-input:focus{border-color:var(--purple)}
+#chat-send{background:var(--violet);border:none;border-radius:8px;color:white;padding:8px 16px;cursor:pointer;font-family:var(--font);font-size:12px;transition:opacity .2s}
+#chat-send:hover{opacity:.8}
+#chat-send:disabled{opacity:.4;cursor:not-allowed}
+
+#terminal-container{flex:1;padding:8px;overflow:hidden}
+#terminal-container .xterm{height:100%}
+
+.btn{padding:6px 14px;border-radius:8px;border:none;cursor:pointer;font-family:var(--font);font-size:12px;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:var(--violet);color:white}
+.btn-primary:hover{opacity:.85}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--border)}
+.btn-ghost:hover{background:var(--surface2);color:var(--white)}
+.btn-danger{background:var(--error);color:white}
+.btn-success{background:var(--success);color:#0d1117}
+
+#missing-overlay,#settings-modal{display:none;position:fixed;inset:0;background:rgba(13,11,30,.9);z-index:1000;align-items:center;justify-content:center}
+#missing-overlay.show,#settings-modal.show{display:flex}
+.missing-panel,.modal-inner{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px;width:min(700px,92vw);max-height:82vh;overflow-y:auto}
+.missing-header{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.missing-header h2{font-size:20px}
+.missing-item{padding:10px 14px;border-radius:10px;margin-bottom:6px;display:flex;align-items:center;gap:10px;font-size:13px}
+.missing-item.warn{background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);color:var(--warning)}
+.missing-item.ok{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3);color:var(--success)}
+.missing-item.err{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.3);color:var(--error)}
+.missing-actions{display:flex;gap:8px;margin-top:16px}
+
+.kanban{display:flex;gap:10px;overflow-x:auto;padding:8px;height:100%;align-items:flex-start}
+.kcol{flex-shrink:0;width:180px;background:var(--surface2);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.kcol-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);padding-bottom:6px;border-bottom:1px solid var(--border)}
+.ktask{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px;font-size:12px;cursor:pointer;transition:all .2s}
+.ktask:hover{border-color:var(--purple);transform:translateY(-1px)}
+.ktask-priority{font-size:10px;padding:2px 6px;border-radius:4px;margin-top:4px;display:inline-block}
+.p-high{background:rgba(248,113,113,.2);color:var(--error)}
+.p-med{background:rgba(251,191,36,.2);color:var(--warning)}
+.p-low{background:rgba(74,222,128,.2);color:var(--success)}
+.add-task{background:transparent;border:1px dashed var(--border);border-radius:8px;padding:8px;text-align:center;color:var(--muted);cursor:pointer;font-size:12px;transition:all .2s}
+.add-task:hover{border-color:var(--purple);color:var(--purple)}
+
+.git-file{font-size:12px;padding:4px 8px;border-radius:6px;display:flex;align-items:center;gap:6px}
+.git-file:hover{background:var(--surface2)}
+.git-file.modified{color:var(--warning)}
+.git-file.added{color:var(--success)}
+.git-file.deleted{color:var(--error)}
+.git-file.untracked{color:var(--muted)}
+
+.modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.modal-header h2{font-size:18px}
+.modal-close{background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:4px;transition:color .2s}
+.modal-close:hover{color:var(--error)}
+.setting-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border)}
+.setting-label{font-size:13px;color:var(--white)}
+.setting-desc{font-size:11px;color:var(--muted);margin-top:2px}
+.toggle{width:40px;height:22px;background:var(--border);border-radius:11px;position:relative;cursor:pointer;transition:background .2s;flex-shrink:0}
+.toggle.on{background:var(--violet)}
+.toggle::after{content:'';position:absolute;top:3px;left:3px;width:16px;height:16px;background:white;border-radius:50%;transition:transform .2s}
+.toggle.on::after{transform:translateX(18px)}
+input[type="text"],input[type="number"]{background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--white);padding:8px 12px;font-family:var(--font);font-size:12px;outline:none;width:100%}
+input[type="text"]:focus,input[type="number"]:focus{border-color:var(--purple)}
+
+#splash{position:fixed;inset:0;background:var(--bg);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .5s}
+#splash.fade{opacity:0;pointer-events:none}
+.splash-puzzle{font-size:64px;animation:spin 4s linear infinite}
+@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.splash-title{font-size:26px;font-weight:700}
+.splash-sub{font-size:13px;color:var(--muted)}
+.splash-status{font-size:12px;color:var(--purple);margin-top:8px}
+.splash-status.err{color:var(--error)}
+
+.tab-content{display:none;height:100%;flex-direction:column}
+.tab-content.active{display:flex}
+.project-name{font-size:11px;color:var(--muted);padding:8px 12px;border-bottom:1px solid var(--border);font-weight:600}
+.section-title{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);padding:8px 12px 4px}
+.empty-state{text-align:center;padding:32px;color:var(--muted);font-size:12px}
+.empty-state .icon{font-size:28px;margin-bottom:8px}
+
+#run-bar{display:none;background:var(--surface2);border-bottom:1px solid var(--border);padding:8px 16px;align-items:center;gap:12px}
+#run-bar.show{display:flex}
+.run-badge{display:flex;align-items:center;gap:6px;padding:4px 12px;border-radius:20px;font-size:12px}
+.run-badge.running{background:rgba(74,222,128,.15);color:var(--success)}
+.run-badge.stopped{background:rgba(248,113,113,.15);color:var(--error)}
+.badge-dot{width:8px;height:8px;border-radius:50%;background:currentColor;animation:blink 1s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+#problem-list,#skills-list{padding:8px}
+#test-results{padding:8px}
+
+#cwd-display{font-size:11px;color:var(--muted);padding:4px 8px;margin-left:auto}
+
+@keyframes slideIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:slideIn .3s ease-out}
+
+@media(max-width:900px){#sidebar{width:180px}#right-panel{width:260px}}
+@media(max-width:600px){#sidebar,#right-panel{display:none}#main{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<div id="splash">
+  <div class="splash-puzzle">🧩</div>
+  <div class="splash-title">THE MISSING PIECE STUDIO</div>
+  <div class="splash-sub">Powered by Hermes Agent</div>
+  <div class="splash-status" id="splash-status">Connecting to Hermes...</div>
+</div>
+
+<div id="app" style="display:none">
+  <!-- HEADER -->
+  <div id="header">
+    <div class="logo">
+      <span class="logo-icon">🧩</span>
+      <span style="font-size:14px;font-weight:600">TMPS</span>
+    </div>
+    <div style="font-size:11px;color:var(--muted)">The Missing Piece Studio</div>
+    <div class="status-bar">
+      <div class="sitem">
+        <span class="dot dot-off" id="hermes-dot"></span>
+        <span id="hermes-label">Hermes</span>
+      </div>
+      <div class="sitem">
+        <span class="dot dot-ok" id="git-dot"></span>
+        <span id="git-label">Git</span>
+      </div>
+      <div class="sitem">
+        <span class="dot dot-ok"></span>
+        <span>Terminal</span>
+      </div>
+      <button class="btn btn-primary" onclick="openMissing()" style="padding:5px 14px;font-size:11px">🧩 Find Missing Piece</button>
+      <button class="btn btn-ghost" onclick="openSettings()" style="padding:5px 10px;font-size:11px">⚙</button>
+    </div>
+  </div>
+
+  <!-- RUN BAR -->
+  <div id="run-bar">
+    <div class="run-badge stopped" id="run-badge">
+      <span class="badge-dot" style="display:none" id="run-dot"></span>
+      <span id="run-label">Ready</span>
+    </div>
+    <div style="margin-left:auto;display:flex;gap:8px">
+      <button class="btn btn-primary" id="run-btn" onclick="runProject()">▶ Run</button>
+      <button class="btn btn-ghost" id="stop-btn" onclick="stopProject()" style="display:none">■ Stop</button>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div id="main">
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+      <div id="sidebar-tabs">
+        <div class="stab active" onclick="switchSTab(this,'files')">📁</div>
+        <div class="stab" onclick="switchSTab(this,'tasks')">📋</div>
+        <div class="stab" onclick="switchSTab(this,'git')">⎇</div>
+        <div class="stab" onclick="switchSTab(this,'skills')">🧠</div>
+      </div>
+      <div class="project-name" id="sidebar-project">Loading...</div>
+
+      <div id="tab-files" class="tab-content active">
+        <div style="padding:6px 8px;display:flex;gap:4px">
+          <button class="btn btn-ghost" onclick="refreshTree()" style="flex:1;font-size:11px;padding:4px">↻</button>
+          <button class="btn btn-ghost" onclick="openMissing()" style="flex:1;font-size:11px;padding:4px">🧩</button>
+        </div>
+        <div id="file-tree" style="flex:1;overflow-y:auto;padding:4px 8px"></div>
+      </div>
+
+      <div id="tab-tasks" class="tab-content" style="display:none">
+        <div style="padding:8px;flex:1;overflow-y:auto">
+          <div id="kanban-board" class="kanban"></div>
+        </div>
+      </div>
+
+      <div id="tab-git" class="tab-content" style="display:none">
+        <div style="padding:8px;flex:1;overflow-y:auto">
+          <div class="section-title">Branch</div>
+          <div id="git-branch" style="padding:4px 12px;font-size:12px;color:var(--purple)">—</div>
+          <div class="section-title">Changes</div>
+          <div id="git-files"></div>
+          <div style="padding:8px">
+            <button class="btn btn-ghost" onclick="refreshGit()" style="width:100%;font-size:11px;padding:6px">↻ Refresh</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-skills" class="tab-content" style="display:none">
+        <div style="padding:8px;flex:1;overflow-y:auto">
+          <div id="skills-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDITOR -->
+    <div id="editor-area">
+      <div id="editor-tabs"></div>
+      <div id="monaco-container"></div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div id="right-panel">
+      <div id="panel-tabs">
+        <div class="ptab active" onclick="switchPTab(this,'chat')">🤖 Hermes</div>
+        <div class="ptab" onclick="switchPTab(this,'tests')">🧪</div>
+        <div class="ptab" onclick="switchPTab(this,'problems')">⚠️</div>
+      </div>
+
+      <div id="panel-chat" class="tab-content active">
+        <div id="chat-output"></div>
+        <div id="chat-input-wrap">
+          <textarea id="chat-input" rows="2" placeholder="Ask Hermes anything..." onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat()}"></textarea>
+          <button id="chat-send" onclick="sendChat()">→</button>
+        </div>
+      </div>
+
+      <div id="panel-tests" class="tab-content" style="display:none">
+        <div style="padding:12px">
+          <button class="btn btn-primary" onclick="runTests()" style="width:100%;margin-bottom:12px">▶ Run Tests</button>
+          <div id="test-results" class="empty-state">
+            <div class="icon">🧪</div>
+            <div>Run tests via Hermes</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-problems" class="tab-content" style="display:none">
+        <div style="padding:12px">
+          <button class="btn btn-ghost" onclick="findProblems()" style="width:100%;margin-bottom:12px">🔍 Analyze Problems</button>
+          <div id="problem-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div id="bottom-bar">
+    <div id="bottom-tabs">
+      <div class="btab active" onclick="switchBTab(this,'term')">Terminal</div>
+      <div class="btab" onclick="switchBTab(this,'output')">Output</div>
+      <div class="btab" onclick="switchBTab(this,'debug')">Debug</div>
+      <div id="cwd-display">~</div>
+    </div>
+    <div id="terminal-container" class="tab-content active"></div>
+    <div id="output-container" class="tab-content" style="display:none;padding:8px;overflow-y:auto;font-size:12px"></div>
+    <div id="debug-container" class="tab-content" style="display:none;padding:8px;overflow-y:auto;font-size:12px"></div>
+  </div>
+</div>
+
+<!-- MISSING PIECE -->
+<div id="missing-overlay">
+  <div class="missing-panel anim">
+    <div class="missing-header">
+      <span style="font-size:28px">🧩</span>
+      <div><h2>Find The Missing Piece</h2><div style="font-size:12px;color:var(--muted)">Hermes analyzes your project for gaps</div></div>
+      <div style="margin-left:auto"><button class="btn btn-ghost" onclick="closeMissing()">✕</button></div>
+    </div>
+    <div id="missing-progress" style="text-align:center;padding:24px;color:var(--purple);font-size:14px">🧩 Hermes is analyzing...</div>
+    <div id="missing-results" style="display:none"></div>
+    <div class="missing-actions" id="missing-actions" style="display:none">
+      <button class="btn btn-primary" onclick="askHermesFix()">🤖 Ask Hermes to Fix</button>
+      <button class="btn btn-ghost" onclick="closeMissing()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- SETTINGS -->
+<div id="settings-modal">
+  <div class="modal-inner anim">
+    <div class="modal-header">
+      <h2>⚙ Settings</h2>
+      <button class="modal-close" onclick="closeSettings()">✕</button>
+    </div>
+    <div class="section-title" style="padding:0 0 4px">Hermes</div>
+    <div class="setting-row">
+      <div><div class="setting-label">Auto-connect</div><div class="setting-desc">Connect to Hermes on launch</div></div>
+      <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+    </div>
+    <div class="setting-row">
+      <div><div class="setting-label">Timeout (seconds)</div></div>
+      <input type="number" value="120" style="width:80px" id="s-timeout">
+    </div>
+    <div class="section-title" style="padding:8px 0 4px">Studio</div>
+    <div class="setting-row">
+      <div><div class="setting-label">Font Size</div></div>
+      <input type="number" value="13" style="width:80px" id="s-fontsize">
+    </div>
+    <div class="setting-row">
+      <div><div class="setting-label">Animations</div></div>
+      <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+    </div>
+    <div class="section-title" style="padding:8px 0 4px">Security</div>
+    <div class="setting-row">
+      <div><div class="setting-label">Confirm destructive commands</div><div class="setting-desc">Ask before rm, rmdir, etc.</div></div>
+      <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+    </div>
+    <div style="margin-top:20px;display:flex;gap:8px">
+      <button class="btn btn-primary" onclick="saveSettings();closeSettings()">Save</button>
+      <button class="btn btn-ghost" onclick="closeSettings()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = 'http://localhost:18999';
+const term = new Terminal({theme:{background:'#0d0b1e',foreground:'#f0eeff',cursor:'#a78bfa'},fontSize:13,fontFamily:'JetBrains Mono,monospace',cursorBlink:true,scrollback:5000});
+const fitAddon = new FitAddon.FitAddon();
+term.loadAddon(fitAddon);
+
+let monacoReady=false, openTabs=[], activeTab=null;
+let termCwd='/data/data/com.termux/files/home/Projects/cr_Projects';
+let projectRoot='/data/data/com.termux/files/home/Projects/cr_Projects';
+
+// ── BOOT ──
+async function boot() {
+  document.getElementById('splash-status').textContent = 'Starting TMPS Server...';
+  await startServer();
+  document.getElementById('splash-status').textContent = 'Connecting to Hermes...';
+  await checkHermes();
+  await loadProject();
+  await initMonaco();
+  initTerminal();
+  loadTasks();
+  loadSkills();
+  refreshGit();
+  setTimeout(()=>{
+    const splash=document.getElementById('splash');
+    if(splash){splash.classList.add('fade');setTimeout(()=>splash.remove(),500);}
+    document.getElementById('app').style.display='flex';
+  },1400);
+}
+
+async function startServer() {
+  try { await fetch(API+'/api/doctor'); } catch {
+    document.getElementById('splash-status').textContent='Server not running. Start with: python3 server.py';
+    document.getElementById('splash-status').classList.add('err');
+  }
+}
+
+async function checkHermes() {
+  try {
+    const r=await fetch(API+'/api/doctor');
+    const d=await r.json();
+    const h=d.checks?.find(c=>c.name==='Hermes Agent')?.ok;
+    const c=d.checks?.find(c=>c.name==='Hermes Comms')?.ok;
+    if(h&&c){
+      document.getElementById('splash-status').textContent='Hermes Agent Connected ✓';
+      document.getElementById('hermes-dot').className='dot dot-ok';
+      document.getElementById('hermes-label').textContent='Hermes ●';
+      addChatMsg('system','🤖 Hermes Agent connected. Ready.');
+      return;
+    }
+  } catch{}
+  document.getElementById('splash-status').textContent='Hermes Agent offline';
+  document.getElementById('splash-status').classList.add('err');
+  document.getElementById('hermes-dot').className='dot dot-err';
+  document.getElementById('hermes-label').textContent='Hermes ✕';
+}
+
+async function loadProject() {
+  try {
+    const r=await fetch(API+'/api/project/detect');
+    const d=await r.json();
+    projectRoot=d.root||projectRoot;
+    const name=projectRoot.split('/').pop();
+    document.getElementById('project-label').textContent=name;
+    document.getElementById('sidebar-project').textContent=name;
+    termCwd=projectRoot;
+    document.getElementById('cwd-display').textContent='~/'+projectRoot.split('/').slice(-2).join('/');
+    await refreshTree();
+    if(d.dev_cmd){
+      document.getElementById('run-bar').classList.add('show');
+      document.getElementById('run-label').textContent=d.dev_cmd||'Ready';
+    }
+  } catch(e){console.error('project',e);}
+}
+window.projectLabel=document.createElement('span');
+
+// ── MONACO ──
+async function initMonaco() {
+  require.config({paths:{'vs':'https://cdn.jsdelivr.net/npm/monaco-editor@0.52.0/min/vs'}});
+  require(['vs/editor/editor.main'],()=>{
+    monacoReady=true;
+    monaco.editor.defineTheme('tmps-dark',{
+      base:'vs-dark',inherit:true,
+      rules:[
+        {token:'comment',foreground:'6b6284',fontStyle:'italic'},
+        {token:'keyword',foreground:'a78bfa'},
+        {token:'string',foreground:'f9a8d4'},
+        {token:'number',foreground:'fbbf24'},
+        {token:'type',foreground:'67e8f9'},
+      ],
+      colors:{
+        'editor.background':'#0d0b1e','editor.foreground':'#f0eeff',
+        'editor.lineHighlightBackground':'#1a1730','editor.selectionBackground':'#352f5e',
+        'editorCursor.foreground':'#a78bfa','editorLineNumber.foreground':'#352f5e',
+        'editorLineNumber.activeForeground':'#9d95c0','editorWidget.background':'#1a1730',
+        'editorWidget.border':'#352f5e','input.background':'#1a1730','input.border':'#352f5e',
+      }
+    });
+    monaco.editor.setTheme('tmps-dark');
+    openFile(projectRoot+'/README.md','README.md');
+  });
+}
+
+function getEd(){return monaco.editor.getEditors()[0];}
+
+function openFile(path,name){
+  if(!monacoReady)return;
+  const ex=openTabs.find(t=>t.path===path);
+  if(ex){switchTab(ex);return;}
+  fetch(API+'/api/files/read?path='+encodeURIComponent(path))
+    .then(r=>r.json())
+    .then(d=>{
+      openTabs.push({path,name,dirty:false});
+      renderTabs();
+      switchTab(openTabs[openTabs.length-1]);
+      if(d.ok){
+        const ed=getEd();
+        ed.setValue(d.content);
+        ed.getModel()?.setLanguage(getLang(path));
+        ed.onDidChangeModelContent(()=>{
+          const t=openTabs.find(x=>x.path===path);
+          if(t&&!t.dirty){t.dirty=true;renderTabs();}
+        });
+      }
+    }).catch(()=>{
+      openTabs.push({path,name,dirty:false});
+      renderTabs();
+      switchTab(openTabs[openTabs.length-1]);
+    });
+}
+
+function switchTab(tab){activeTab=tab;renderTabs();}
+
+function closeTab(tab,e){
+  if(e)e.stopPropagation();
+  const idx=openTabs.indexOf(tab);
+  openTabs.splice(idx,1);
+  if(activeTab===tab)activeTab=openTabs[Math.min(idx,openTabs.length-1)]||null;
+  renderTabs();
+  if(activeTab)fetch(API+'/api/files/read?path='+encodeURIComponent(activeTab.path)).then(r=>r.json()).then(d=>{if(d.ok){getEd()?.setValue(d.content);getEd()?.getModel()?.setLanguage(getLang(activeTab.path));}});
+  else getEd()?.setValue('');
+}
+
+function renderTabs(){
+  document.getElementById('editor-tabs').innerHTML=openTabs.map(t=>`
+    <div class="etab ${t===activeTab?'active':''} ${t.dirty?'dirty':''}" onclick="switchTab(openTabs.find(x=>x.path==='${t.path.replace(/'/g,"\\'")}'))">
+      <span class="dot"></span>${t.name}
+      <span class="close" onclick="closeTab(openTabs.find(x=>x.path==='${t.path.replace(/'/g,"\\'")}'),event)">✕</span>
+    </div>`).join('');
+}
+
+function getLang(p){const m={js:'javascript',jsx:'javascript',ts:'typescript',tsx:'typescript',py:'python',md:'markdown',json:'json',html:'html',css:'css',sh:'shell',bash:'shell',yaml:'yaml',yml:'yaml',toml:'ini',go:'go',rs:'rust',c:'c',cpp:'cpp'};return m[p.split('.').pop()]||'plaintext';}
+
+function saveCurrentFile(){
+  if(!activeTab)return;
+  const content=getEd()?.getValue()||'';
+  fetch(API+'/api/files/write',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path:activeTab.path,content})})
+    .then(r=>r.json()).then(d=>{if(d.ok){activeTab.dirty=false;renderTabs();term.write('\x1b[32m✓ Saved: '+activeTab.name+'\x1b[0m\r\n');}});
+}
+document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key==='s'){e.preventDefault();saveCurrentFile();}});
+
+// ── FILE TREE ──
+let treeState={};
+
+async function refreshTree(){
+  const el=document.getElementById('file-tree');
+  el.innerHTML='<div style="padding:8px;color:var(--muted);font-size:11px">Loading...</div>';
+  try{
+    const r=await fetch(API+'/api/files/list?path='+encodeURIComponent(projectRoot));
+    const d=await r.json();
+    if(d.ok)el.innerHTML=renderTree(d.entries);
+  }catch{e.innerHTML='<div style="padding:8px;color:var(--error);font-size:11px">Error</div>';}
+}
+
+function renderTree(entries){return entries.map(e=>{
+  const isDir=e.type==='dir';
+  const exp=treeState[e.path];
+  const child=isDir&&exp?`<div class="tree-children" id="tc-${btoa(e.path).replace(/=/g,'')}"></div>`:'';
+  return`<div><div class="tree-item ${isDir?'dir':''}" onclick="treeClick(this,'${e.path}',${isDir})"><span class="icon">${isDir?(exp?'📂':'📁'):fileIcon(e.name)}</span><span class="name">${e.name}</span></div>${child}</div>`;
+}).join('');}
+
+function fileIcon(n){const m={js:'📜',jsx:'⚛',ts:'📘',tsx:'⚛',py:'🐍',md:'📝',json:'📋',html:'🌐',css:'🎨',sh:'📟',yaml:'⚙',yml:'⚙',toml:'⚙',txt:'📄',svg:'🖼',env:'🔑'};return m[n.split('.').pop().toLowerCase()]||'📄';}
+
+async function treeClick(el,path,isDir){
+  document.querySelectorAll('.tree-item.selected').forEach(x=>x.classList.remove('selected'));
+  el.classList.add('selected');
+  if(isDir){
+    treeState[path]=!treeState[path];
+    el.querySelector('.icon').textContent=treeState[path]?'📂':'📁';
+    const ce=document.getElementById('tc-'+btoa(path).replace(/=/g,''));
+    if(treeState[path]&&ce){try{const r=await fetch(API+'/api/files/list?path='+encodeURIComponent(path));const d=await r.json();if(d.ok)ce.innerHTML=renderTree(d.entries);}catch{ce.innerHTML='<div style="padding:4px 8px;font-size:11px;color:var(--error)">Error</div>';}}
+  }else{
+    openFile(path,path.split('/').pop());
+  }
+}
+
+// ── TERMINAL ──
+function initTerminal(){
+  const c=document.getElementById('terminal-container');
+  term.open(c);fitAddon.fit();
+  term.write('\x1b[35m🧩 TMPS Terminal Ready\x1b[0m\r\n');
+  term.write('\x1b[90mType commands. Ctrl+S saves editor. Ctrl+C interrupts.\x1b[0m\r\n');
+  term.write('\x1b[90m────────────────────────────────\x1b[0m\r\n\r\n');
+  let buf='';
+  term.onData(d=>{
+    if(d==='\r'){
+      const cmd=buf.trim();buf='';term.write('\r\n');
+      if(cmd)execCmd(cmd);
+    }else if(d==='\x03'){term.write('^C\r\n');buf='';}
+    else if(d==='\x7f'){if(buf.length){buf=buf.slice(0,-1);term.write('\b \b');}}
+    else if(d==='\x0c'){term.clear();}
+    else{buf+=d;term.write(d);}
+  });
+  window.addEventListener('resize',()=>{try{fitAddon.fit();}catch{}});
+}
+
+function execCmd(cmd){
+  if(cmd==='clear'||cmd==='cls'){term.clear();return;}
+  if(cmd.startsWith('cd ')){
+    const dir=cmd.slice(3).trim();
+    termCwd=dir.startsWith('/')?dir:(termCwd+'/'+dir).replace(/\/+/g,'/');
+    document.getElementById('cwd-display').textContent='~/'+termCwd.split('/').slice(-2).join('/');
+    return;
+  }
+  fetch(API+'/api/terminal/create',{method:'POST'}).then(r=>r.json()).then(d=>{
+    if(d.ok)fetch(API+'/api/terminal/'+d.id+'/write',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({cmd})}).then(r=>r.json()).then(wd=>{if(wd.output)term.write(wd.output.replace(/\n/g,'\r\n'));}).catch(e=>term.write('\x1b[31mError: '+e.message+'\x1b[0m\r\n'));
+  }).catch(e=>term.write('\x1b[31mError: '+e.message+'\x1b[0m\r\n'));
+}
+
+// ── HERMES CHAT ──
+function addChatMsg(role,content){
+  const el=document.getElementById('chat-output');
+  const d=document.createElement('div');d.className='msg '+role;d.textContent=content;el.appendChild(d);el.scrollTop=el.scrollHeight;
+}
+
+async function sendChat(){
+  const input=document.getElementById('chat-input');
+  const sendBtn=document.getElementById('chat-send');
+  const prompt=input.value.trim();
+  if(!prompt)return;
+  input.value='';
+  addChatMsg('user',prompt);
+  sendBtn.disabled=true;input.disabled=true;
+  const prog=addChatMsg('system','🧩 Thinking...');
+  try{
+    const r=await fetch(API+'/api/hermes/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt})});
+    const d=await r.json();
+    prog.remove();
+    if(d.ok&&d.stdout)addChatMsg('hermes',d.stdout.trim());
+    else if(d.error)addChatMsg('system','Error: '+d.error);
+  }catch(e){prog.remove();addChatMsg('system','Connection: '+e.message);}
+  finally{sendBtn.disabled=false;input.disabled=false;input.focus();}
+}
+
+// ── MISSING PIECE ──
+function openMissing(){document.getElementById('missing-overlay').classList.add('show');document.getElementById('missing-progress').style.display='block';document.getElementById('missing-results').style.display='none';document.getElementById('missing-actions').style.display='none';runMissingAnalysis();}
+function closeMissing(){document.getElementById('missing-overlay').classList.remove('show');}
+async function runMissingAnalysis(){
+  const el=document.getElementById('missing-progress');
+  try{
+    const r=await fetch(API+'/api/hermes/missing',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({project:projectRoot})});
+    const d=await r.json();
+    el.style.display='none';
+    const res=document.getElementById('missing-results');
+    res.style.display='block';
+    res.innerHTML=d.ok&&d.stdout?formatFindings(d.stdout):'<div class="empty-state"><div class="icon">✓</div><div>No issues found.</div></div>';
+    document.getElementById('missing-actions').style.display='flex';
+  }catch(e){el.textContent='Error: '+e.message;el.style.color='var(--error)';}
+}
+function formatFindings(t){return t.split('\n').filter(l=>l.trim()).map(line=>{const lo=line.toLowerCase();let cls='warn',icon='⚠';if(/^(✓|✅|pass|ok|found|valid)/.test(line.trim())){cls='ok';icon='✓';}else if(/^(✗|❌|error|fail|missing|broken)/.test(line.trim())){cls='err';icon='✕';}return`<div class="missing-item ${cls}"><span>${icon}</span><span>${esc(line)}</span></div>`;}).join('');}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function askHermesFix(){
+  const findings=document.getElementById('missing-results').innerText;
+  document.getElementById('chat-input').value='Fix these issues found in the project:\n'+findings;
+  closeMissing();
+  document.querySelector('#panel-tabs .ptab').click();
+  document.getElementById('chat-input').focus();
+}
+
+// ── GIT ──
+async function refreshGit(){
+  try{
+    const r=await fetch(API+'/api/git/status');
+    const d=await r.json();
+    if(d.ok){
+      document.getElementById('git-branch').textContent=d.branch||'—';
+      const changes=d.changes?.filter(c=>c.trim())||[];
+      document.getElementById('git-dot').className='dot '+(changes.length?'dot-warn':'dot-ok');
+      document.getElementById('git-label').textContent=changes.length?'Git ('+changes.length+')':'Git';
+      document.getElementById('git-files').innerHTML=changes.length?changes.map(c=>{const st=c.slice(0,2),path=c.slice(3);const cls={M:'modified',A:'added',D:'deleted',R:'modified'}[st.trim()]||'untracked';const icon={'modified':'📝','added':'➕','deleted':'🗑','untracked':'❓'}[cls];return`<div class="git-file ${cls}">${icon} <span>${esc(path)}</span></div>`;}).join(''):'<div style="padding:8px;font-size:12px;color:var(--success)">✓ Clean</div>';
+    }
+  }catch{}
+}
+
+// ── TASKS ──
+const COLS=[{id:'backlog',title:'Backlog'},{id:'ready',title:'Ready'},{id:'working',title:'Hermes Working'},{id:'review',title:'Review'},{id:'done',title:'Done'}];
+let tasks=JSON.parse(localStorage.getItem('tmps_tasks')||'null')||[{id:1,col:'ready',title:'Inspect project structure',priority:'med'},{id:2,col:'backlog',title:'Fix TODO comments',priority:'low'},{id:3,col:'done',title:'Setup TMPS studio',priority:'high'}];
+
+function loadTasks(){
+  document.getElementById('kanban-board').innerHTML=COLS.map(c=>{
+    const ts=tasks.filter(t=>t.col===c.id);
+    return`<div class="kcol"><div class="kcol-title">${c.title}</div>${ts.map(t=>`<div class="ktask" onclick="taskClicked(${t.id})"><div style="font-size:11px;font-weight:600">${esc(t.title)}</div><span class="ktask-priority p-${t.priority}">${t.priority}</span></div>`).join('')}<div class="add-task" onclick="addTask('${c.id}')">+ Add</div></div>`;
+  }).join('');
+}
+
+function taskClicked(id){const t=tasks.find(x=>x.id===id);if(t){document.getElementById('chat-input').value='Task: '+t.title;document.querySelector('#panel-tabs .ptab').click();document.getElementById('chat-input').focus();}}
+function addTask(col){const title=prompt('Task:');if(!title)return;tasks.push({id:Date.now(),col,title,priority:prompt('Priority (high/med/low):','med')||'med'});localStorage.setItem('tmps_tasks',JSON.stringify(tasks));loadTasks();}
+
+// ── SKILLS ──
+function loadSkills(){
+  const skills=['hermes-agent','github','email','media','mlops','note-taking','productivity','research','security','smart-home','social-media','software-development','ui-prototype-verify','creative','lilynova'];
+  document.getElementById('skills-list').innerHTML=skills.map(s=>`<div class="tree-item" onclick="openSkill('${s}')"><span class="icon">🧠</span><span class="name">${s}</span></div>`).join('');
+}
+function openSkill(name){document.getElementById('chat-input').value='Load the '+name+' skill and describe it.';document.querySelector('#panel-tabs .ptab').click();document.getElementById('chat-input').focus();}
+
+// ── TESTS ──
+async function runTests(){
+  const el=document.getElementById('test-results');
+  el.innerHTML='<div style="text-align:center;padding:16px;color:var(--purple)">🧪 Running via Hermes...</div>';
+  try{
+    const r=await fetch(API+'/api/hermes/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:'Run the project tests and show me results. Execute the actual test command.'})});
+    const d=await r.json();
+    el.innerHTML=d.ok&&d.stdout?`<pre style="font-size:11px;white-space:pre-wrap;color:var(--muted)">${esc(d.stdout)}</pre>`:'<div class="empty-state"><div class="icon">⚠</div><div>No test output</div></div>';
+  }catch(e){el.innerHTML='<div class="empty-state"><div class="icon">⚠</div><div>'+e.message+'</div></div>';}
+}
+
+// ── PROBLEMS ──
+async function findProblems(){
+  const el=document.getElementById('problem-list');
+  el.innerHTML='<div style="text-align:center;padding:16px;color:var(--purple)">🔍 Analyzing...</div>';
+  try{
+    const r=await fetch(API+'/api/hermes/missing',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({project:projectRoot,context:'Focus: syntax errors, import errors, missing configs, unused code.'})});
+    const d=await r.json();
+    el.innerHTML=d.ok&&d.stdout?formatFindings(d.stdout):'<div class="empty-state"><div class="icon">✓</div><div>No problems found.</div></div>';
+  }catch(e){el.innerHTML='<div class="empty-state"><div class="icon">⚠</div><div>'+e.message+'</div></div>';}
+}
+
+// ── RUN PROJECT ──
+function runProject(){
+  document.getElementById('run-badge').className='run-badge running';
+  document.getElementById('run-dot').style.display='inline';
+  document.getElementById('run-label').textContent='Running...';
+  document.getElementById('stop-btn').style.display='inline-flex';
+  execCmd('npm run dev 2>&1 &');
+}
+function stopProject(){
+  document.getElementById('run-badge').className='run-badge stopped';
+  document.getElementById('run-dot').style.display='none';
+  document.getElementById('run-label').textContent='Stopped';
+  document.getElementById('stop-btn').style.display='none';
+}
+
+// ── UI HELPERS ──
+function switchSTab(el,id){document.querySelectorAll('#sidebar-tabs .stab').forEach(x=>x.classList.remove('active'));el.classList.add('active');document.querySelectorAll('#sidebar > .tab-content').forEach(x=>x.style.display='none');document.getElementById('tab-'+id).style.display='flex';}
+function switchPTab(el,id){document.querySelectorAll('#panel-tabs .ptab').forEach(x=>x.classList.remove('active'));el.classList.add('active');document.querySelectorAll('#right-panel > .tab-content').forEach(x=>x.style.display='none');const panel=document.getElementById('panel-'+id);panel.style.display='flex';panel.classList.add('active');}
+function switchBTab(el,id){document.querySelectorAll('#bottom-tabs .btab').forEach(x=>x.classList.remove('active'));el.classList.add('active');document.querySelectorAll('#bottom-bar > .tab-content').forEach(x=>x.style.display='none');const c=document.getElementById(id+'-container');c.style.display='block';c.classList.add('active');if(id==='term'){try{fitAddon.fit();}catch{}}}
+function openSettings(){document.getElementById('settings-modal').classList.add('show');}
+function closeSettings(){document.getElementById('settings-modal').classList.remove('show');}
+function saveSettings(){const fs=parseInt(document.getElementById('s-fontsize').value)||13;term.options.fontSize=fs;try{fitAddon.fit();}catch{}}
+
+boot();
+</script>
+</body>
+</html>

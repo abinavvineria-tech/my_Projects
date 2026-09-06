@@ -1,0 +1,46 @@
+use std
+
+# Test arithmetic and variables
+aura x = 10
+aura y = 20
+aura z = x + y * 2
+
+print("x = ", x)
+print("y = ", y)
+print("z = ", z)
+
+# Test functions
+spell add(a, b):
+    return a + b
+
+spell factorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print("add(5, 3) = ", add(5, 3))
+print("factorial(5) = ", factorial(5))
+
+# Test strings
+aura greeting = "Hello"
+aura name = "World"
+print(greeting + ", " + name + "!")
+
+# Test booleans
+aura is_true = true
+aura is_false = false
+print("is_true = ", is_true)
+print("is_false = ", is_false)
+print("not is_false = ", !is_false)
+
+# Test conditionals
+aura score = 85
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")

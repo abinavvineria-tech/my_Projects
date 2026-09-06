@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LilyNova — Create beyond the timeline.</title>
+  <meta name="theme-color" content="#1a1025">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            lily: {
+              plum: '#1a1025',
+              lavender: '#9B7BB8',
+              pink: '#D4869C',
+              gold: '#E8D5B7',
+              white: '#F8F6FF',
+              cream: '#F5F0FA',
+              dark: '#120B1A',
+              mid: '#2A1F35',
+            }
+          },
+          fontFamily: {
+            quicksand: ['Quicksand', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate',
+            'slide-in': 'slideIn 0.3s ease-out',
+            'fade-in': 'fadeIn 0.4s ease-out',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 5px rgba(212, 134, 156, 0.3)' },
+              '100%': { boxShadow: '0 0 20px rgba(212, 134, 156, 0.6)' },
+            },
+            slideIn: {
+              '0%': { transform: 'translateX(-20px)', opacity: '0' },
+              '100%': { transform: 'translateX(0)', opacity: '1' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'scale(0.95)' },
+              '100%': { opacity: '1', transform: 'scale(1)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body { font-family: 'Quicksand', sans-serif; }
+    .glass { 
+      background: rgba(26, 16, 37, 0.7); 
+      backdrop-filter: blur(12px); 
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(155, 123, 184, 0.2);
+    }
+    .glass-light {
+      background: rgba(248, 246, 255, 0.85);
+      border: 1px solid rgba(155, 123, 184, 0.3);
+    }
+    .card {
+      background: linear-gradient(145deg, rgba(42, 31, 53, 0.9), rgba(26, 16, 37, 0.95));
+      border: 1px solid rgba(155, 123, 184, 0.25);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: rgba(212, 134, 156, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(212, 134, 156, 0.15);
+    }
+    .light .card {
+      background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(245,240,250,0.9));
+      border: 1px solid rgba(155, 123, 184, 0.3);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #D4869C 0%, #9B7BB8 100%);
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(212, 134, 156, 0.4);
+    }
+    .sidebar-item {
+      transition: all 0.2s ease;
+      border-left: 3px solid transparent;
+    }
+    .sidebar-item:hover, .sidebar-item.active {
+      background: rgba(155, 123, 184, 0.15);
+      border-left-color: #D4869C;
+    }
+    .sidebar-item.active {
+      background: rgba(212, 134, 156, 0.2);
+    }
+    .glow-text {
+      text-shadow: 0 0 20px rgba(212, 134, 156, 0.5);
+    }
+    .terminal-bg {
+      background: #0d0d12;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+    .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+    .scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(155, 123, 184, 0.3); border-radius: 3px; }
+    .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: rgba(155, 123, 184, 0.5); }
+    
+    /* Command Palette */
+    .command-palette {
+      background: rgba(26, 16, 37, 0.95);
+      backdrop-filter: blur(20px);
+    }
+    .light .command-palette {
+      background: rgba(255, 255, 255, 0.98);
+    }
+    .command-item:hover, .command-item.selected {
+      background: rgba(212, 134, 156, 0.2);
+    }
+    
+    /* Notifications */
+    .notification {
+      animation: slideIn 0.3s ease-out;
+    }
+    
+    /* Activity timeline */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 40px;
+      bottom: -10px;
+      width: 2px;
+      background: linear-gradient(to bottom, #D4869C, transparent);
+    }
+    .timeline-item:last-child::before { display: none; }
+  </style>
+</head>
+<body class="bg-lily-plum text-lily-white dark min-h-screen overflow-hidden">
+  <div id="app" class="h-screen flex flex-col">
+    <!-- Top Bar -->
+    <header class="glass px-4 py-2 flex items-center justify-between z-50">
+      <div class="flex items-center gap-3">
+        <div class="text-2xl animate-float">🌸</div>
+        <div>
+          <h1 class="text-lg font-bold glow-text">LilyNova</h1>
+          <p class="text-xs text-lily-lavender opacity-70">Create beyond the timeline.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <button onclick="app.toggleCommandPalette()" class="p-2 hover:bg-lily-lavender/20 rounded-lg transition" title="Command Palette (Ctrl+K)">
+          <i class="fas fa-terminal"></i>
+        </button>
+        <button onclick="app.toggleTheme()" class="p-2 hover:bg-lily-lavender/20 rounded-lg transition">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <div class="flex items-center gap-2 text-sm">
+          <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+          <span class="text-lily-lavender">Agent Active</span>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-lily-pink to-lily-lavender flex items-center justify-center font-bold">
+          A
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex flex-1 overflow-hidden">
+      <!-- Sidebar -->
+      <nav id="sidebar" class="w-64 glass overflow-y-auto scrollbar-thin">
+        <div class="p-4 space-y-1">
+          <button onclick="app.navigate('overview')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3 active" data-page="overview">
+            <i class="fas fa-home w-5"></i>
+            <span>Overview</span>
+          </button>
+          <button onclick="app.navigate('studio')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="studio">
+            <i class="fas fa-palette w-5"></i>
+            <span>LilyNova Studio</span>
+          </button>
+          <button onclick="app.navigate('timebreaker')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="timebreaker">
+            <i class="fas fa-clock w-5"></i>
+            <span>Timebreaker</span>
+          </button>
+          <button onclick="app.navigate('purelily')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="purelily">
+            <i class="fas fa-seedling w-5"></i>
+            <span>PureLily</span>
+          </button>
+          <button onclick="app.navigate('cookierun')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="cookierun">
+            <i class="fas fa-cookie-bite w-5"></i>
+            <span>Cookie Run</span>
+          </button>
+          <button onclick="app.navigate('hermes')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="hermes">
+            <i class="fas fa-robot w-5"></i>
+            <span>Hermes Agent</span>
+          </button>
+          <button onclick="app.navigate('projects')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="projects">
+            <i class="fas fa-folder-open w-5"></i>
+            <span>Projects</span>
+          </button>
+          <button onclick="app.navigate('terminal')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="terminal">
+            <i class="fas fa-console w-5"></i>
+            <span>Terminal</span>
+          </button>
+          <button onclick="app.navigate('settings')" class="sidebar-item w-full text-left px-4 py-3 rounded-lg flex items-center gap-3" data-page="settings">
+            <i class="fas fa-cog w-5"></i>
+            <span>Settings</span>
+          </button>
+        </div>
+        
+        <!-- Quick Stats -->
+        <div class="p-4 border-t border-lily-lavender/20 mt-4">
+          <h3 class="text-xs uppercase text-lily-lavender/60 mb-3 font-semibold">Quick Stats</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between">
+              <span class="text-lily-lavender">Projects</span>
+              <span id="stat-projects">0</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-lily-lavender">Tasks</span>
+              <span id="stat-tasks">0</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-lily-lavender">Skills</span>
+              <span id="stat-skills">0</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Content Area -->
+      <main id="content" class="flex-1 overflow-y-auto scrollbar-thin p-6">
+        <!-- Pages loaded here -->
+      </main>
+    </div>
+
+    <!-- Status Bar -->
+    <footer class="glass px-4 py-1 flex items-center justify-between text-xs text-lily-lavender/70">
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-code-branch mr-1"></i> LN v1.0.0</span>
+        <span id="status-location">Overview</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span id="status-time"></span>
+        <span><kbd class="px-1 py-0.5 bg-lily-mid rounded">Ctrl+K</kbd> Commands</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Command Palette (hidden by default) -->
+  <div id="command-palette" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/50" onclick="app.closeCommandPalette()"></div>
+    <div class="command-palette rounded-xl shadow-2xl w-full max-w-xl mx-auto mt-24 overflow-hidden">
+      <div class="p-4 border-b border-lily-lavender/20">
+        <input type="text" id="command-input" placeholder="Search commands, projects, files..." 
+               class="w-full bg-transparent border-none outline-none text-lg placeholder-lily-lavender/50">
+      </div>
+      <div id="command-results" class="max-h-80 overflow-y-auto scrollbar-thin">
+        <!-- Commands listed here -->
+      </div>
+      <div class="p-2 border-t border-lily-lavender/20 text-xs text-lily-lavender/50 flex justify-between">
+        <span><kbd class="px-1 bg-lily-mid rounded">↑↓</kbd> Navigate</span>
+        <span><kbd class="px-1 bg-lily-mid rounded">Enter</kbd> Select</span>
+        <span><kbd class="px-1 bg-lily-mid rounded">Esc</kbd> Close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Container -->
+  <div id="notifications" class="fixed top-20 right-4 z-50 space-y-2"></div>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
