@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-06",
+  "games": [
+    {
+      "id": "kingdom",
+      "short": "CRK",
+      "name": "Kingdom",
+      "fullName": "Cookie Run: Kingdom",
+      "filterKey": "KINGDOM"
+    },
+    {
+      "id": "ovenbreak",
+      "short": "CROB",
+      "name": "OvenBreak",
+      "fullName": "Cookie Run: OvenBreak",
+      "filterKey": "OVENBREAK"
+    },
+    {
+      "id": "witchs-castle",
+      "short": "CRWC",
+      "name": "Witch's Castle",
+      "fullName": "Cookie Run: Witch's Castle",
+      "filterKey": "WITCH'S CASTLE"
+    },
+    {
+      "id": "tower-of-adventures",
+      "short": "CRTOA",
+      "name": "Tower of Adventures",
+      "fullName": "Cookie Run: Tower of Adventures",
+      "filterKey": "TOWER OF ADVENTURES"
+    },
+    {
+      "id": "ovensmash",
+      "short": "CROS",
+      "name": "OvenSmash",
+      "fullName": "Cookie Run: OvenSmash",
+      "filterKey": "OVENSMASH"
+    },
+    {
+      "id": "crumble",
+      "short": "CRC",
+      "name": "Crumble",
+      "fullName": "Cookie Run: Crumble",
+      "filterKey": "CRUMBLE"
+    },
+    {
+      "id": "puzzle-world",
+      "short": "CRPW",
+      "name": "Puzzle World",
+      "fullName": "Cookie Run: Puzzle World",
+      "filterKey": "PUZZLE WORLD"
+    },
+    {
+      "id": "classic",
+      "short": "CRCL",
+      "name": "Classic",
+      "fullName": "Cookie Run Classic",
+      "filterKey": "CLASSIC"
+    },
+    {
+      "id": "braverse",
+      "short": "CRB",
+      "name": "Braverse",
+      "fullName": "Cookie Run: Braverse",
+      "filterKey": "BRAVERSE"
+    }
+  ]
+}

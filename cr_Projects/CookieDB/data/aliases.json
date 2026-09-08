@@ -1,0 +1,12 @@
+{
+  "aliases": {
+    "gingerbrave": ["ginger-brave", "GB", "ginger"],
+    "pure-vanilla-cookie": ["PV", "pure-vanilla", "pure-vanila"],
+    "hollyberry-cookie": ["HB", "holly-berry", "hollyberry"],
+    "dark-cacao-cookie": ["DC", "dark-cacoa", "darkcacao"],
+    "golden-cheese-cookie": ["GC", "golden-cheese", "goldencheese"],
+    "white-lily-cookie": ["WL", "white-lily", "whitelily"],
+    "strawberry-cookie": ["strawberry", "berry"],
+    "rumi-cookie": ["kdh-rumi", "rumi"]
+  }
+}

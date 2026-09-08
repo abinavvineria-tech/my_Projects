@@ -1,0 +1,4830 @@
+{
+  "meta": {
+    "game": "Kingdom",
+    "gameShort": "CRK",
+    "totalCookies": 214,
+    "lastUpdated": "2026-09-06"
+  },
+  "cookies": [
+    {
+      "id": "gingerbrave-cookie",
+      "name": "GingerBrave",
+      "typingText": "GingerBrave",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "starter",
+        "original"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "gingerbright-cookie",
+      "name": "GingerBright",
+      "typingText": "GingerBright",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "starter",
+        "original"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "strawberry-cookie",
+      "name": "Strawberry Cookie",
+      "typingText": "Strawberry",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Middle",
+      "tags": [
+        "starter",
+        "berry"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "skater-cookie",
+      "name": "Skater Cookie",
+      "typingText": "Skater Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "speed"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "wizard-cookie",
+      "name": "Wizard Cookie",
+      "typingText": "Wizard Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "magic",
+        "wizard"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "muscle-cookie",
+      "name": "Muscle Cookie",
+      "typingText": "Muscle Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "strength"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "angel-cookie",
+      "name": "Angel Cookie",
+      "typingText": "Angel Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "healing",
+        "angel"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "ninja-cookie",
+      "name": "Ninja Cookie",
+      "typingText": "Ninja Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "ninja",
+        "speed"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "beet-cookie",
+      "name": "Beet Cookie",
+      "typingText": "Beet Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mint-choco-cookie",
+      "name": "Mint Choco Cookie",
+      "typingText": "MintChoco",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "chocolate",
+        "mint"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "carrot-cookie",
+      "name": "Carrot Cookie",
+      "typingText": "Carrot",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "vegetable",
+        "carrot"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "fizz-gummy-cookie",
+      "name": "Fizz Gummy Cookie",
+      "typingText": "Fizz Gummy Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "gummy",
+        "soda"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "snow-sugar-cookie",
+      "name": "Snow Sugar Cookie",
+      "typingText": "Snow Sugar Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "winter",
+        "magic"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "custard-cookie-iii",
+      "name": "Custard Cookie III",
+      "typingText": "Custard Cookie III",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "dessert"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pancake-cookie",
+      "name": "Pancake Cookie",
+      "typingText": "Pancake Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "breakfast",
+        "dessert"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cream-puff-cookie",
+      "name": "Cream Puff Cookie",
+      "typingText": "Cream Puff Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "dessert",
+        "healing"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "gumball-cookie",
+      "name": "Gumball Cookie",
+      "typingText": "Gumball Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "candy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "buttercream-cookie",
+      "name": "Buttercream Cookie",
+      "typingText": "Buttercream Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "dessert",
+        "healing"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "clover-cookie",
+      "name": "Clover Cookie",
+      "typingText": "Clover Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "lucky",
+        "clover"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "crepe-cookie",
+      "name": "Crepe Cookie",
+      "typingText": "Crepe Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "dessert",
+        "french"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "dough-shuttle-cookie",
+      "name": "Dough-Shuttle Cookie",
+      "typingText": "Dough-Shuttle Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "space"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "macaron-cookie",
+      "name": "Macaron Cookie",
+      "typingText": "Macaron Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "dessert",
+        "french"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "onion-cookie",
+      "name": "Onion Cookie",
+      "typingText": "Onion Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "vegetable",
+        "onion"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cafe-cookie",
+      "name": "Cafe Cookie",
+      "typingText": "Cafe Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "coffee",
+        "cafe"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mango-cookie",
+      "name": "Mango Cookie",
+      "typingText": "Mango Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "tropical",
+        "fruit"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "tea-cookie",
+      "name": "Tea Cookie",
+      "typingText": "Tea Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "tea",
+        "beverage"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "herb-cookie",
+      "name": "Herb Cookie",
+      "typingText": "Herb Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "herb",
+        "healing"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "sugar-cookie",
+      "name": "Sugar Cookie",
+      "typingText": "Sugar Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "sweet",
+        "dessert"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "blackberry-cookie",
+      "name": "Blackberry Cookie",
+      "typingText": "Blackberry Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "berry",
+        "fruit"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "sundae-cookie",
+      "name": "Sundae Cookie",
+      "typingText": "Sundae Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Common",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "dessert",
+        "ice-cream"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "adventurer-cookie",
+      "name": "Adventurer Cookie",
+      "typingText": "Adventurer",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "adventure",
+        "explorer"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "alchemist-cookie",
+      "name": "Alchemist Cookie",
+      "typingText": "Alchemist",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "alchemy",
+        "potion"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cherry-cookie",
+      "name": "Cherry Cookie",
+      "typingText": "Cherry",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "cherry",
+        "fruit"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "knight-cookie",
+      "name": "Knight Cookie",
+      "typingText": "Knight",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "knight",
+        "medieval"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "princess-cookie",
+      "name": "Princess Cookie",
+      "typingText": "Princess",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "princess",
+        "royalty"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "devil-cookie",
+      "name": "Devil Cookie",
+      "typingText": "Devil",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "demon",
+        "dark"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pirate-cookie",
+      "name": "Pirate Cookie",
+      "typingText": "Pirate Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "pirate",
+        "naval"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "rockstar-cookie",
+      "name": "Rockstar Cookie",
+      "typingText": "Rockstar Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "music",
+        "rock"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "popcorn-cookie",
+      "name": "Popcorn Cookie",
+      "typingText": "Popcorn Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "movie",
+        "snack"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "milk-cookie",
+      "name": "Milk Cookie",
+      "typingText": "Milk Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "dairy",
+        "milk"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "yogurt-cookie",
+      "name": "Yogurt Cookie",
+      "typingText": "Yogurt Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "dairy",
+        "yogurt"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "sparkling-cookie",
+      "name": "Sparkling Cookie",
+      "typingText": "Sparkling Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "sparkle",
+        "soda"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mustard-cookie",
+      "name": "Mustard Cookie",
+      "typingText": "Mustard Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "condiment",
+        "spicy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "ketchup-cookie",
+      "name": "Ketchup Cookie",
+      "typingText": "Ketchup Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "condiment",
+        "tomato"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "walnut-cookie",
+      "name": "Walnut Cookie",
+      "typingText": "Walnut Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "nut",
+        "brainy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pomegranate-cookie",
+      "name": "Pomegranate Cookie",
+      "typingText": "Pomegranate Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "fruit",
+        "ancient"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "espresso-cookie",
+      "name": "Espresso Cookie",
+      "typingText": "Espresso Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "coffee",
+        "energy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "vampire-cookie",
+      "name": "Vampire Cookie",
+      "typingText": "Vampire Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "vampire",
+        "undead"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "general-wool-cookie",
+      "name": "General Wool Cookie",
+      "typingText": "General Wool Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "military",
+        "leader"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "avocado-cookie",
+      "name": "Avocado Cookie",
+      "typingText": "Avocado Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "vegetable",
+        "healthy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "sunrise-cookie",
+      "name": "Sunrise Cookie",
+      "typingText": "Sunrise Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "morning",
+        "sun"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "moonlight-cookie",
+      "name": "Moonlight Cookie",
+      "typingText": "Moonlight Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Rare",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "night",
+        "moon"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "strawberry-crepe-cookie",
+      "name": "Strawberry Crepe Cookie",
+      "typingText": "StrawberryCrepe",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "dessert",
+        "berry"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "werewolf-cookie",
+      "name": "Werewolf Cookie",
+      "typingText": "Werewolf Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "werewolf",
+        "lycan"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mint-macroon-cookie",
+      "name": "Mint Macroon Cookie",
+      "typingText": "Mint Macroon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "dessert",
+        "mint"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cherry-blossom-cookie",
+      "name": "Cherry Blossom Cookie",
+      "typingText": "Cherry Blossom Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "spring",
+        "japanese"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "spicy-pastry-cookie",
+      "name": "Spicy Pastry Cookie",
+      "typingText": "Spicy Pastry Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "spicy",
+        "asian"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "hollyberry-cookie",
+      "name": "Hollyberry Cookie",
+      "typingText": "Hollyberry",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Ancient",
+      "type": "Charge",
+      "position": "Front",
+      "element": "Fire",
+      "tags": [
+        "ancient",
+        "warrior",
+        "berry"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pure-vanilla-cookie",
+      "name": "Pure Vanilla Cookie",
+      "typingText": "PureVanilla",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Ancient",
+      "type": "Healing",
+      "position": "Rear",
+      "element": "Light",
+      "tags": [
+        "ancient",
+        "healer",
+        "vanilla"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "dark-cacao-cookie",
+      "name": "Dark Cacao Cookie",
+      "typingText": "DarkCacao",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Ancient",
+      "type": "Ambush",
+      "position": "Middle",
+      "element": "Dark",
+      "tags": [
+        "ancient",
+        "dark",
+        "cacao"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "golden-cheese-cookie",
+      "name": "Golden Cheese Cookie",
+      "typingText": "GoldenCheese",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Ancient",
+      "type": "Ranged",
+      "position": "Middle",
+      "element": "Electric",
+      "tags": [
+        "ancient",
+        "golden",
+        "cheese"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "white-lily-cookie",
+      "name": "White Lily Cookie",
+      "typingText": "WhiteLily",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Ancient",
+      "type": "Magic",
+      "position": "Middle",
+      "element": "Earth",
+      "tags": [
+        "ancient",
+        "mystery",
+        "lily"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "eclair-cookie",
+      "name": "Eclair Cookie",
+      "typingText": "Eclair Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "dessert",
+        "french"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "auntic-cookie",
+      "name": "Auntic Cookie",
+      "typingText": "Auntic Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "ancient",
+        "mystery"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "twizzly-gummy-cookie",
+      "name": "Twizzly Gummy Cookie",
+      "typingText": "Twizzly Gummy Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "gummy",
+        "candy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pistachio-cookie",
+      "name": "Pistachio Cookie",
+      "typingText": "Pistachio Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "nut",
+        "persian"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "dark-choco-cookie",
+      "name": "Dark Choco Cookie",
+      "typingText": "Dark Choco Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "chocolate",
+        "dark"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "red-velvet-cookie",
+      "name": "Red Velvet Cookie",
+      "typingText": "Red Velvet Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "dessert",
+        "velvet"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "ocean-coral-cookie",
+      "name": "Ocean Coral Cookie",
+      "typingText": "Ocean Coral Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "ocean",
+        "coral"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "caramel-arrow-cookie",
+      "name": "Caramel Arrow Cookie",
+      "typingText": "Caramel Arrow Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "archer",
+        "caramel"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "ghost-pastry-cookie",
+      "name": "Ghost Pastry Cookie",
+      "typingText": "Ghost Pastry Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "ghost",
+        "haunted"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "schwarzwlder-cookie",
+      "name": "Schwarzwälder Cookie",
+      "typingText": "Schwarzwälder Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "german",
+        "cake"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "madeleine-cookie",
+      "name": "Madeleine Cookie",
+      "typingText": "Madeleine Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "dessert",
+        "french"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "rol-rookie-cookie",
+      "name": "ROL Roookie Cookie",
+      "typingText": "ROL Roookie Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Super Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "mascot",
+        "special"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "ranger-cookie",
+      "name": "Ranger Cookie",
+      "typingText": "Ranger Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "ranger",
+        "forest"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "bbq-cookie",
+      "name": "BBQ Cookie",
+      "typingText": "BBQ Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "meat",
+        "bbq"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pumpkin-cookie",
+      "name": "Pumpkin Cookie",
+      "typingText": "Pumpkin Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "halloween",
+        "pumpkin"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "black-sugar-cookie",
+      "name": "Black Sugar Cookie",
+      "typingText": "Black Sugar Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "dark",
+        "sweet"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "matcha-cookie",
+      "name": "Matcha Cookie",
+      "typingText": "Matcha Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "japanese",
+        "tea"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cotton-cookie",
+      "name": "Cotton Cookie",
+      "typingText": "Cotton Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "fluffy",
+        "dreamy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cafe-au-lait-cookie",
+      "name": "Cafe au Lait Cookie",
+      "typingText": "Cafe au Lait Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "coffee",
+        "milk"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "clotted-cream-cookie",
+      "name": "Clotted Cream Cookie",
+      "typingText": "Clotted Cream Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "british",
+        "cream"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "progression-cookie",
+      "name": "ProGamer Cookie",
+      "typingText": "ProGamer Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "gaming",
+        "tech"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "liyue-cookie",
+      "name": "Liyue Cookie",
+      "typingText": "Liyue Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "chinese",
+        "liyue"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "ms-lead-cookie",
+      "name": "Ms. Lead Cookie",
+      "typingText": "Ms. Lead Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "leader",
+        "metal"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "squid-ink-cookie",
+      "name": "Squid Ink Cookie",
+      "typingText": "Squid Ink Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "ocean",
+        "squid"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "captain-whipping-cream-cookie",
+      "name": "Captain Whipping Cream Cookie",
+      "typingText": "Captain Whipping Cream Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "captain",
+        "naval"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "dr-bones-cookie",
+      "name": "Dr. Bones Cookie",
+      "typingText": "Dr. Bones Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "skeleton",
+        "doctor"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "bumbleberry-cookie",
+      "name": "Bumbleberry Cookie",
+      "typingText": "Bumbleberry Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "berry",
+        "bee"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pizza-cookie",
+      "name": "Pizza Cookie",
+      "typingText": "Pizza Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "italian",
+        "pizza"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "weed-cookie",
+      "name": "Weed Cookie",
+      "typingText": "Weed Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "grass",
+        "nature"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "glitter-cookie",
+      "name": "Glitter Cookie",
+      "typingText": "Glitter Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "glitter",
+        "sparkle"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "bank-bunny-cookie",
+      "name": "Bank Bunny Cookie",
+      "typingText": "Bank Bunny Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "bunny",
+        "money"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "fire-spirit-cookie",
+      "name": "Fire Spirit Cookie",
+      "typingText": "Fire Spirit Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "fire",
+        "spirit"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "windy-baker-cookie",
+      "name": "Windy Baker Cookie",
+      "typingText": "Windy Baker Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "wind",
+        "baker"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "icicle-arya-cookie",
+      "name": "Icicle Arya Cookie",
+      "typingText": "Icicle Arya Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "ice",
+        "nordic"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mala-sauce-cookie",
+      "name": "Mala Sauce Cookie",
+      "typingText": "Mala Sauce Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "spicy",
+        "chinese"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "chili-pepper-cookie",
+      "name": "Chili Pepper Cookie",
+      "typingText": "Chili Pepper Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "spicy",
+        "pepper"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "blueberry-pie-cookie",
+      "name": "Blueberry Pie Cookie",
+      "typingText": "Blueberry Pie Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "dessert",
+        "berry"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "lemon-cookie",
+      "name": "Lemon Cookie",
+      "typingText": "Lemon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "citrus",
+        "lemon"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "strawberry-maintenance-cookie",
+      "name": "Strawberry Maintenance Cookie",
+      "typingText": "Strawberry Maintenance Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "berry",
+        "maintenance"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "buttered-corn-cookie",
+      "name": "Buttered Corn Cookie",
+      "typingText": "Buttered Corn Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "corn",
+        "butter"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "fresh-lily-cookie",
+      "name": "Fresh Lily Cookie",
+      "typingText": "Fresh Lily Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "lily",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "whisper-cookie",
+      "name": "Whisper Cookie",
+      "typingText": "Whisper Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "shadow",
+        "mystery"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "doll-cookie",
+      "name": "Doll Cookie",
+      "typingText": "Doll Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "doll",
+        "creepy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "enpn-cookie",
+      "name": "Enpn Cookie",
+      "typingText": "Enpn Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "enpn",
+        "glitch"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "bright-burger-cookie",
+      "name": "Bright Burger Cookie",
+      "typingText": "Bright Burger Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "burger",
+        "fast-food"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "chick-cookie",
+      "name": "Chick Cookie",
+      "typingText": "Chick Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "chicken",
+        "cute"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "hotchk-cookie",
+      "name": "HotCHK Cookie",
+      "typingText": "HotCHK Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "bagel",
+        "spicy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "sweet-trouble-cookie",
+      "name": "Sweet Trouble Cookie",
+      "typingText": "Sweet Trouble Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "mischief",
+        "sweet"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "rambutan-cookie",
+      "name": "Rambutan Cookie",
+      "typingText": "Rambutan Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "fruit",
+        "tropical"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "sawmint-cookie",
+      "name": "Sawmint Cookie",
+      "typingText": "Sawmint Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "mint",
+        "christmas"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cocoa-cookie",
+      "name": "Cocoa Cookie",
+      "typingText": "Cocoa Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "chocolate",
+        "winter"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "poinsettia-cookie",
+      "name": "Poinsettia Cookie",
+      "typingText": "Poinsettia Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "flower",
+        "christmas"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "bulldozer-cookie",
+      "name": "Bulldozer Cookie",
+      "typingText": "Bulldozer Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "vehicle",
+        "construction"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cocomong-cookie",
+      "name": "Cocomong Cookie",
+      "typingText": "Cocomong Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "cocomong",
+        "cartoon"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "dl-tomorrow-cookie",
+      "name": "dl Tomorrow Cookie",
+      "typingText": "dl Tomorrow Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "future",
+        "time"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "moon-cake-cookie",
+      "name": "Moon Cake Cookie",
+      "typingText": "Moon Cake Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "chinese",
+        "festival"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mango-boniche-cookie",
+      "name": "Mango Boniche Cookie",
+      "typingText": "Mango Boniche Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "tropical",
+        "fancy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pastry-cookie",
+      "name": "Pastry Cookie",
+      "typingText": "Pastry Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "pastry",
+        "baker"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "choux-cookie",
+      "name": "Choux Cookie",
+      "typingText": "Choux Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "dessert",
+        "french"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "croissant-cookie",
+      "name": "Croissant Cookie",
+      "typingText": "Croissant Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "dessert",
+        "french"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "moon-cookie",
+      "name": "Moon Cookie",
+      "typingText": "Moon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "moon",
+        "space"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "space-doughnut-cookie",
+      "name": "Space Doughnut Cookie",
+      "typingText": "Space Doughnut Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "space",
+        "donut"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "earl-grey-cookie",
+      "name": "Earl Grey Cookie",
+      "typingText": "Earl Grey Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "tea",
+        "british"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mic-cookie",
+      "name": "Mic Cookie",
+      "typingText": "Mic Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "music",
+        "singer"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "dj-cookie",
+      "name": "DJ Cookie",
+      "typingText": "DJ Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "music",
+        "dj"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "party-present-cookie",
+      "name": "Party Present Cookie",
+      "typingText": "Party Present Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "party",
+        "gift"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "yogurt-dragon-cookie",
+      "name": "Yogurt Dragon Cookie",
+      "typingText": "Yogurt Dragon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "dragon",
+        "yogurt"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "milk-graham-cookie",
+      "name": "Milk Graham Cookie",
+      "typingText": "Milk Graham Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "milk",
+        "graham"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "carrot-cake-cookie",
+      "name": "Carrot Cake Cookie",
+      "typingText": "Carrot Cake Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "cake",
+        "carrot"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "frieze-cookie",
+      "name": "Frieze Cookie",
+      "typingText": "Frieze Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "ice",
+        "figure"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "scorpion-cookie",
+      "name": "Scorpion Cookie",
+      "typingText": "Scorpion Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "scorpion",
+        "desert"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "soda-cookie",
+      "name": "Soda Cookie",
+      "typingText": "Soda Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "soda",
+        "bubble"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "buttermilk-cookie",
+      "name": "Buttermilk Cookie",
+      "typingText": "Buttermilk Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "buttermilk",
+        "dairy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cinnamon-cookie",
+      "name": "Cinnamon Cookie",
+      "typingText": "Cinnamon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "cinnamon",
+        "spice"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "peach-cookie",
+      "name": "Peach Cookie",
+      "typingText": "Peach Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "peach",
+        "fruit"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "blue-lantern-cookie",
+      "name": "Blue Lantern Cookie",
+      "typingText": "Blue Lantern Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "lantern",
+        "chinese"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "wind-archer-cookie",
+      "name": "Wind Archer Cookie",
+      "typingText": "Wind Archer Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "archer",
+        "wind"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cacao-machine-cookie",
+      "name": "Cacao Machine Cookie",
+      "typingText": "Cacao Machine Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "cacao",
+        "machine"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cream-soda-cookie",
+      "name": "Cream Soda Cookie",
+      "typingText": "Cream Soda Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "soda",
+        "cream"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "crystal-soda-cookie",
+      "name": "Crystal Soda Cookie",
+      "typingText": "Crystal Soda Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "soda",
+        "crystal"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "butter-cookie",
+      "name": "Butter Cookie",
+      "typingText": "Butter Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "butter",
+        "dairy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cookiepedia-cookie",
+      "name": "CookiePedia Cookie",
+      "typingText": "CookiePedia Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "pedia",
+        "encyclopedia"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "flower-crown-cookie",
+      "name": "Flower Crown Cookie",
+      "typingText": "Flower Crown Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "flower",
+        "crown"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "flower-wizard-cookie",
+      "name": "Flower Wizard Cookie",
+      "typingText": "Flower Wizard Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "flower",
+        "wizard"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pompkin-cookie",
+      "name": "Pompkin Cookie",
+      "typingText": "Pompkin Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "pumpkin",
+        "cute"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "windpie-cookie",
+      "name": "Wind Pie Cookie",
+      "typingText": "Wind Pie Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "pie",
+        "wind"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "geyser-cookie",
+      "name": "Geyser Cookie",
+      "typingText": "Geyser Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "geyser",
+        "hot-spring"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "champagne-cookie",
+      "name": "Champagne Cookie",
+      "typingText": "Champagne Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "champagne",
+        "celebration"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mercurial-ninja-cookie",
+      "name": "Mercurial Ninja Cookie",
+      "typingText": "Mercurial Ninja Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "ninja",
+        "mercury"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "miracle-aladdin-cookie",
+      "name": "Miracle Aladdin Cookie",
+      "typingText": "Miracle Aladdin Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "aladdin",
+        "magic"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "puss-in-boots-cookie",
+      "name": "Puss in Boots Cookie",
+      "typingText": "Puss in Boots Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "cat",
+        "boots"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "einstein-cookie",
+      "name": "Einstein Cookie",
+      "typingText": "Einstein Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "scientist",
+        "genius"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "luna-cookie",
+      "name": "Luna Cookie",
+      "typingText": "Luna Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "moon",
+        "magic"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "chocolate-moon-cookie",
+      "name": "Chocolate Moon Cookie",
+      "typingText": "Chocolate Moon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "chocolate",
+        "moon"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "portress-cookie",
+      "name": "Portress Cookie",
+      "typingText": "Portress Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "knight",
+        "guard"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "dr-king-cookie",
+      "name": "Dr. King Cookie",
+      "typingText": "Dr. King Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "doctor",
+        "monkey"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "yuca-cookie",
+      "name": "Yuca Cookie",
+      "typingText": "Yuca Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "vegetable",
+        "root"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cassava-cookie",
+      "name": "Cassava Cookie",
+      "typingText": "Cassava Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "vegetable",
+        "tropical"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "taro-cookie",
+      "name": "Taro Cookie",
+      "typingText": "Taro Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "taro",
+        "purple"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mung-bean-cookie",
+      "name": "Mung Bean Cookie",
+      "typingText": "Mung Bean Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "bean",
+        "green"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "lotus-cookie",
+      "name": "Lotus Cookie",
+      "typingText": "Lotus Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "lotus",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "black-bun-cookie",
+      "name": "Black Bun Cookie",
+      "typingText": "Black Bun Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "bun",
+        "black"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "chili-voodoo-cookie",
+      "name": "Chili Voodoo Cookie",
+      "typingText": "Chili Voodoo Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "voodoo",
+        "spicy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "sandwich-cookie",
+      "name": "Sandwich Cookie",
+      "typingText": "Sandwich Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "sandwich"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "pickle-cookie",
+      "name": "Pickle Cookie",
+      "typingText": "Pickle Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "pickle",
+        "sour"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "nectar-cookie",
+      "name": "Nectar Cookie",
+      "typingText": "Nectar Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "nectar",
+        "sweet"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "parfait-cookie",
+      "name": "Parfait Cookie",
+      "typingText": "Parfait Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "parfait",
+        "dessert"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "berry-cookie",
+      "name": "Berry Cookie",
+      "typingText": "Berry Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "berry",
+        "fruit"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "spark-pearl-cookie",
+      "name": "Spark Pearl Cookie",
+      "typingText": "Spark Pearl Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "pearl",
+        "spark"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cinderella-cookie",
+      "name": "Cinderella Cookie",
+      "typingText": "Cinderella Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "cinderella",
+        "fairy-tale"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "liar-cookie",
+      "name": "Liar Cookie",
+      "typingText": "Liar Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "liar",
+        "deception"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cherry-ball-cookie",
+      "name": "Cherry Ball Cookie",
+      "typingText": "Cherry Ball Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "cherry",
+        "ball"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "mushroom-cookie",
+      "name": "Mushroom Cookie",
+      "typingText": "Mushroom Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "mushroom",
+        "forest"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "tea-knight-cookie",
+      "name": "Tea Knight Cookie",
+      "typingText": "Tea Knight Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "tea",
+        "knight"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "espresso-knight-cookie",
+      "name": "Espresso Knight Cookie",
+      "typingText": "Espresso Knight Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "espresso",
+        "knight"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "milk-tea-cookie",
+      "name": "Milk Tea Cookie",
+      "typingText": "Milk Tea Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "milk",
+        "tea"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "cacao-goddess-cookie",
+      "name": "Cacao Goddess Cookie",
+      "typingText": "Cacao Goddess Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "cacao",
+        "goddess"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "earthworm-cookie",
+      "name": "Earthworm Cookie",
+      "typingText": "Earthworm Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "earthworm",
+        "underground"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "durian-cookie",
+      "name": "Durian Cookie",
+      "typingText": "Durian Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "durian",
+        "tropical"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "buckwheat-cookie",
+      "name": "Buckwheat Cookie",
+      "typingText": "Buckwheat Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "buckwheat",
+        "grain"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "squash-cookie",
+      "name": "Squash Cookie",
+      "typingText": "Squash Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "squash",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "artichoke-cookie",
+      "name": "Artichoke Cookie",
+      "typingText": "Artichoke Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "artichoke",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "leek-cookie",
+      "name": "Leek Cookie",
+      "typingText": "Leek Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "leek",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "zucchini-cookie",
+      "name": "Zucchini Cookie",
+      "typingText": "Zucchini Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "zucchini",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "asparagus-cookie",
+      "name": "Asparagus Cookie",
+      "typingText": "Asparagus Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "asparagus",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "wasabi-cookie",
+      "name": "Wasabi Cookie",
+      "typingText": "Wasabi Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "wasabi",
+        "spicy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "horseradish-cookie",
+      "name": "Horseradish Cookie",
+      "typingText": "Horseradish Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "horseradish",
+        "spicy"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "garlic-cookie",
+      "name": "Garlic Cookie",
+      "typingText": "Garlic Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "garlic",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "shishito-cookie",
+      "name": "Shishito Cookie",
+      "typingText": "Shishito Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "pepper",
+        "japanese"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "edelweiss-cookie",
+      "name": "Edelweiss Cookie",
+      "typingText": "Edelweiss Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "edelweiss",
+        "alpine"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "camellia-cookie",
+      "name": "Camellia Cookie",
+      "typingText": "Camellia Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "camellia",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "hyacinth-cookie",
+      "name": "Hyacinth Cookie",
+      "typingText": "Hyacinth Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "hyacinth",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "jasmine-cookie",
+      "name": "Jasmine Cookie",
+      "typingText": "Jasmine Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "jasmine",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "lilybell-cookie",
+      "name": "Lilybell Cookie",
+      "typingText": "Lilybell Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "lily",
+        "bell"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "clivia-cookie",
+      "name": "Clivia Cookie",
+      "typingText": "Clivia Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "clivia",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "anemone-cookie",
+      "name": "Anemone Cookie",
+      "typingText": "Anemone Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "anemone",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "ranunculus-cookie",
+      "name": "Ranunculus Cookie",
+      "typingText": "Ranunculus Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "ranunculus",
+        "flower"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "corn-cookie",
+      "name": "Corn Cookie",
+      "typingText": "Corn Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "corn",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "potato-cookie",
+      "name": "Potato Cookie",
+      "typingText": "Potato Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "potato",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "tomato-cookie",
+      "name": "Tomato Cookie",
+      "typingText": "Tomato Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "tomato",
+        "vegetable"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "egg-cookie",
+      "name": "Egg Cookie",
+      "typingText": "Egg Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "egg",
+        "breakfast"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "bacon-cookie",
+      "name": "Bacon Cookie",
+      "typingText": "Bacon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "bacon",
+        "meat"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steak-cookie",
+      "name": "Steak Cookie",
+      "typingText": "Steak Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "steak",
+        "meat"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "winged-doughnut-cookie",
+      "name": "Winged Doughnut Cookie",
+      "typingText": "Winged Doughnut Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "doughnut",
+        "angel"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "whipped-cream-cookie",
+      "name": "Whipped Cream Cookie",
+      "typingText": "Whipped Cream Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "cream",
+        "dessert"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "caramel-choux-cookie",
+      "name": "Caramel Choux Cookie",
+      "typingText": "Caramel Choux Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Magic",
+      "position": "Middle",
+      "tags": [
+        "caramel",
+        "choux"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "burnt-souffle-cookie",
+      "name": "Burnt Soufflé Cookie",
+      "typingText": "Burnt Soufflé Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "souffle",
+        "burnt"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-egg-cookie",
+      "name": "Steamed Egg Cookie",
+      "typingText": "Steamed Egg Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "egg",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-potato-cookie",
+      "name": "Steamed Potato Cookie",
+      "typingText": "Steamed Potato Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "potato",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-fish-cookie",
+      "name": "Steamed Fish Cookie",
+      "typingText": "Steamed Fish Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "fish",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-shrimp-cookie",
+      "name": "Steamed Shrimp Cookie",
+      "typingText": "Steamed Shrimp Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "shrimp",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-meat-cookie",
+      "name": "Steamed Meat Cookie",
+      "typingText": "Steamed Meat Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Charge",
+      "position": "Front",
+      "tags": [
+        "meat",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-crab-cookie",
+      "name": "Steamed Crab Cookie",
+      "typingText": "Steamed Crab Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ambush",
+      "position": "Middle",
+      "tags": [
+        "crab",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-bun-cookie",
+      "name": "Steamed Bun Cookie",
+      "typingText": "Steamed Bun Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "bun",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-dumpling-cookie",
+      "name": "Steamed Dumpling Cookie",
+      "typingText": "Steamed Dumpling Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Ranged",
+      "position": "Middle",
+      "tags": [
+        "dumpling",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "steamed-lotus-root-cookie",
+      "name": "Steamed Lotus Root Cookie",
+      "typingText": "Steamed Lotus Root Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Epic",
+      "type": "Support",
+      "position": "Rear",
+      "tags": [
+        "lotus",
+        "steam"
+      ],
+      "playable": true,
+      "isCrossover": false,
+      "sourceVerified": true
+    },
+    {
+      "id": "rumi-cookie",
+      "name": "Rumi Cookie",
+      "typingText": "Rumi",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "kpop-demon-hunters",
+        "collaboration",
+        "crossover"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "caramel-macchiato-cookie",
+      "name": "Caramel Macchiato Cookie",
+      "typingText": "Caramel Macchiato Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "coffee",
+        "caramel"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "glazed-cookie",
+      "name": "Glazed Cookie",
+      "typingText": "Glazed Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "glazed",
+        "donut"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "ururangi-cookie",
+      "name": "Ururangi Cookie",
+      "typingText": "Ururangi Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "celestial",
+        "nz"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "crab-apple-cookie",
+      "name": "Crab Apple Cookie",
+      "typingText": "Crab Apple Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "crab",
+        "apple"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "mabon-cookie",
+      "name": "Mabon Cookie",
+      "typingText": "Mabon Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "mabon",
+        "harvest"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "kint-dough-cookie",
+      "name": "Kint Dough Cookie",
+      "typingText": "Kint Dough Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "heroic",
+        "legend"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "dream-cookie",
+      "name": "Dream Cookie",
+      "typingText": "Dream Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "dream",
+        "mystery"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "dream-shimmer-cookie",
+      "name": "Dream Shimmer Cookie",
+      "typingText": "Dream Shimmer Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "dream",
+        "shimmer"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "taiyaki-cookie",
+      "name": "Taiyaki Cookie",
+      "typingText": "Taiyaki Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "taiyaki",
+        "japanese"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "namelink-cookie",
+      "name": "Namelink Cookie",
+      "typingText": "Namelink Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "namelink",
+        "mystery"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "sundae-champion-cookie",
+      "name": "Sundae Champion Cookie",
+      "typingText": "Sundae Champion Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "champion",
+        "sundae"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "moth-worry-cookie",
+      "name": "Moth Worry Cookie",
+      "typingText": "Moth Worry Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "moth",
+        "worry"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "moth-hope-cookie",
+      "name": "Moth Hope Cookie",
+      "typingText": "Moth Hope Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "moth",
+        "hope"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "moth-joy-cookie",
+      "name": "Moth Joy Cookie",
+      "typingText": "Moth Joy Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "moth",
+        "joy"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "sonic-cookie",
+      "name": "Sonic Cookie",
+      "typingText": "Sonic Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "sonic",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "tails-cookie",
+      "name": "Tails Cookie",
+      "typingText": "Tails Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "tails",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "knuckles-cookie",
+      "name": "Knuckles Cookie",
+      "typingText": "Knuckles Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "knuckles",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "amy-cookie",
+      "name": "Amy Cookie",
+      "typingText": "Amy Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "amy",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "shadow-cookie",
+      "name": "Shadow Cookie",
+      "typingText": "Shadow Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "shadow",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "silver-cookie",
+      "name": "Silver Cookie",
+      "typingText": "Silver Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "silver",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "rouge-cookie",
+      "name": "Rouge Cookie",
+      "typingText": "Rouge Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "rouge",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "vector-cookie",
+      "name": "Vector Cookie",
+      "typingText": "Vector Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "vector",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "espio-cookie",
+      "name": "Espio Cookie",
+      "typingText": "Espio Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "espio",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "blaze-cookie",
+      "name": "Blaze Cookie",
+      "typingText": "Blaze Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "blaze",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "roux-cookie",
+      "name": "Roux Cookie",
+      "typingText": "Roux Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "roux",
+        "collaboration"
+      ],
+      "isCrossover": true,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "vegan-cookie",
+      "name": "Vegan Cookie",
+      "typingText": "Vegan Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "vegan",
+        "plant"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "dumpling-cookie",
+      "name": "Dumpling Cookie",
+      "typingText": "Dumpling Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "dumpling",
+        "chinese"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "moonrabbit-cookie",
+      "name": "Moon Rabbit Cookie",
+      "typingText": "Moon Rabbit Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "rabbit",
+        "moon"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "yay-cookie",
+      "name": "Yay Cookie",
+      "typingText": "Yay Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "yay",
+        "celebration"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "whipper-cookie",
+      "name": "Whipper Cookie",
+      "typingText": "Whipper Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "whipper",
+        "dessert"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "snapper-cookie",
+      "name": "Snapper Cookie",
+      "typingText": "Snapper Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "snapper",
+        "fish"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "crusher-cookie",
+      "name": "Crusher Cookie",
+      "typingText": "Crusher Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "crusher",
+        "strength"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "bono-cookie",
+      "name": "Bono Cookie",
+      "typingText": "Bono Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "bono",
+        "popstar"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "sorbet-shark-cookie",
+      "name": "Sorbet Shark Cookie",
+      "typingText": "Sorbet Shark Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "sorbet",
+        "shark"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "pet-robot-cookie",
+      "name": "Pet Robot Cookie",
+      "typingText": "Pet Robot Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "robot",
+        "pet"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "marshmallow-cookie",
+      "name": "Marshmallow Cookie",
+      "typingText": "Marshmallow Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "marshmallow",
+        "sweet"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "cactus-cookie",
+      "name": "Cactus Cookie",
+      "typingText": "Cactus Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "cactus",
+        "desert"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "aloe-cookie",
+      "name": "Aloe Cookie",
+      "typingText": "Aloe Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "aloe",
+        "plant"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "fig-cookie",
+      "name": "Fig Cookie",
+      "typingText": "Fig Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "fig",
+        "fruit"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "goji-cookie",
+      "name": "Goji Cookie",
+      "typingText": "Goji Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "goji",
+        "berry"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "pomegranate-wine-cookie",
+      "name": "Pomegranate Wine Cookie",
+      "typingText": "Pomegranate Wine Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "pomegranate",
+        "wine"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "moon-festival-cookie",
+      "name": "Moon Festival Cookie",
+      "typingText": "Moon Festival Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "moon",
+        "festival"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "abdominal-cookie",
+      "name": "Abdominal Cookie",
+      "typingText": "Abdominal Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "abs",
+        "muscle"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "sugar-glass-cookie",
+      "name": "Sugar Glass Cookie",
+      "typingText": "Sugar Glass Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "sugar",
+        "glass"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "flower-devil-cookie",
+      "name": "Flower Devil Cookie",
+      "typingText": "Flower Devil Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "flower",
+        "devil"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "birthday-cookie",
+      "name": "Birthday Cookie",
+      "typingText": "Birthday Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "birthday",
+        "celebration"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "light-gazing-cookie",
+      "name": "Light Gazing Cookie",
+      "typingText": "Light Gazing Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "light",
+        "mystery"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "dark-gazing-cookie",
+      "name": "Dark Gazing Cookie",
+      "typingText": "Dark Gazing Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "dark",
+        "mystery"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "light-gazing-cookie-ex",
+      "name": "Light Gazing Cookie EX",
+      "typingText": "Light Gazing Cookie EX",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "light",
+        "ex"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "dark-gazing-cookie-ex",
+      "name": "Dark Gazing Cookie EX",
+      "typingText": "Dark Gazing Cookie EX",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "dark",
+        "ex"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "light-gazing-pudding",
+      "name": "Light Gazing Pudding",
+      "typingText": "Light Gazing Pudding",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "light",
+        "pudding"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "dark-gazing-pudding",
+      "name": "Dark Gazing Pudding",
+      "typingText": "Dark Gazing Pudding",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "dark",
+        "pudding"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "mercenary-king-cookie",
+      "name": "Mercenary King Cookie",
+      "typingText": "Mercenary King Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "mercenary",
+        "king"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "yggdrasil-cookie",
+      "name": "Yggdrasil Cookie",
+      "typingText": "Yggdrasil Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "yggdrasil",
+        "tree"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "frost-snow-cookie",
+      "name": "Frost Snow Cookie",
+      "typingText": "Frost Snow Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "frost",
+        "snow"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "winter-monkey-cookie",
+      "name": "Winter Monkey Cookie",
+      "typingText": "Winter Monkey Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "winter",
+        "monkey"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "light-cane-cookie",
+      "name": "Light Cane Cookie",
+      "typingText": "Light Cane Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "light",
+        "cane"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "dark-cane-cookie",
+      "name": "Dark Cane Cookie",
+      "typingText": "Dark Cane Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "dark",
+        "cane"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "golden-crystal-cookie",
+      "name": "Golden Crystal Cookie",
+      "typingText": "Golden Crystal Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "golden",
+        "crystal"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "cherry-blossom-s-cookie",
+      "name": "Cherry Blossom S Cookie",
+      "typingText": "Cherry Blossom S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "cherry",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "cream-ferret-cookie",
+      "name": "Cream Ferret Cookie",
+      "typingText": "Cream Ferret Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "ferret",
+        "cream"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "strawberry-superman-cookie",
+      "name": "Strawberry Superman Cookie",
+      "typingText": "Strawberry Superman Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "strawberry",
+        "superhero"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "carrot-cake-s-cookie",
+      "name": "Carrot Cake S Cookie",
+      "typingText": "Carrot Cake S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "carrot",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "chili-pepper-s-cookie",
+      "name": "Chili Pepper S Cookie",
+      "typingText": "Chili Pepper S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "chili",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "mango-s-cookie",
+      "name": "Mango S Cookie",
+      "typingText": "Mango S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "mango",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "twizzly-gummy-s-cookie",
+      "name": "Twizzly Gummy S Cookie",
+      "typingText": "Twizzly Gummy S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "twizzly",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "moonlight-s-cookie",
+      "name": "Moonlight S Cookie",
+      "typingText": "Moonlight S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "moonlight",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "sea-kelp-cookie",
+      "name": "Sea Kelp Cookie",
+      "typingText": "Sea Kelp Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "kelp",
+        "sea"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "sunrise-s-cookie",
+      "name": "Sunrise S Cookie",
+      "typingText": "Sunrise S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "sunrise",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "strawberry-crepe-s-cookie",
+      "name": "Strawberry Crepe S Cookie",
+      "typingText": "Strawberry Crepe S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "strawberry",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "pistachio-s-cookie",
+      "name": "Pistachio S Cookie",
+      "typingText": "Pistachio S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "pistachio",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "hollyberry-s-cookie",
+      "name": "Hollyberry S Cookie",
+      "typingText": "Hollyberry S Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "hollyberry",
+        "s"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    },
+    {
+      "id": "hollyberry-new-year-cookie",
+      "name": "Hollyberry New Year Cookie",
+      "typingText": "Hollyberry New Year Cookie",
+      "game": "Kingdom",
+      "gameShort": "CRK",
+      "rarity": "Special",
+      "tags": [
+        "hollyberry",
+        "newyear"
+      ],
+      "isCrossover": false,
+      "playable": true,
+      "sourceVerified": true
+    }
+  ]
+}
