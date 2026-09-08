@@ -1,0 +1,25 @@
+{
+  "last_checked": "2026-09-08T17:00:00+05:30",
+  "official_sources_monitored": [
+    "https://www.cookierun-kingdom.com/",
+    "https://twitter.com/CookieRunKR/status",
+    "https://www.youtube.com/@CookieRunOfficial"
+  ],
+  "official_source_available": false,
+  "fireclaw_available": false,
+  "updates": [
+    {
+      "id": "sep9-2026",
+      "game": "Cookie Run: Kingdom",
+      "title": "September 9, 2026 Update",
+      "date": "2026-09-09",
+      "source": "Community / Pre-release information (unverified)",
+      "source_url": "",
+      "status_label": "UNCONFIRMED",
+      "published_ts": "2026-09-08T17:00:00+05:30",
+      "fetched_ts": "2026-09-08T17:00:00+05:30",
+      "summary": "Expected update date. No official announcement fetched at build time.",
+      "is_official": false
+    }
+  ]
+}
